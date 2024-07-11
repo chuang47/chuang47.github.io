@@ -1,23 +1,39 @@
-/* styles.css */
+@font-face {
+  font-family: 'Amazon Ember';
+  src: url('AmazonEmber_Lt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+height: 100%;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Amazon Ember', sans-serif;
+background-color: #eeebd7;
 }
 
 .container {
-  text-align: center;
-  width:80%;
-  height:80%;
+text-align: center;
+width: 95%;
+height: 95%;
+background-color:rgb(202, 202, 202);
+border-radius:20px;
+box-shadow: 3px 3px 3px 2px rgb(114, 114, 114);
 }
 
 header, p, footer {
-  margin: 10px 0;
+margin: 10px 0;
 }
 
-.linkedin-img {
-  vertical-align: middle;
+img {
+vertical-align: middle;
+height:48px;
+width:48px;
+}
+
+h1{
+  font-size:45px;
 }
