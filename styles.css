@@ -44,13 +44,6 @@ body{
   margin: 0 35px;
 }
 
-/*Navbar, show which section they're in*/
-/* .nav-link.active {
-  border-radius: 20px;
-  background-color:#d8d8d8;
-  text-align:center;
-} */
-
 body::-webkit-scrollbar{
   display:none;
 }
@@ -118,6 +111,10 @@ section{
 
 .text:nth-child(4){
   transition-delay:2250ms
+}
+
+.text:nth-child(5){
+  transition-delay:3000ms
 }
 
 p{
