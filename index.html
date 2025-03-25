@@ -1,52 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris Huang</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="CH.png">
-    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <nav id="navbar">
-        <a class="nav-link" href="#intro">Home</a>
-        <a class="nav-link" href="#about">About Me</a>
-        <a class="nav-link" href="#contact">Socials</a>
-    </nav>
+    <div class="container">
 
-    <section id="intro">
-        <p class="text hidden">Christopher Huang</p>
-        <p class="text hidden">Software Engineer</p>
-        <p class="text hidden">Computer Science @ UMD</p>
-    </section>
-
-    <section id="contact">
-
-        <div class="logos">
-            <div class="logo hidden">
-                <a href="https://www.linkedin.com/in/chrishuang47/" target="_blank" class="socials"><img src="linkedin.png" class="socials"></a>
+        <!-- Static Left Panel -->
+        <aside class="sidebar">
+            <div class="intro">
+                <h1>Chris Huang</h1>
+                <h2>Software Engineer</h2>
+                <p>CS @ UMD</p>
             </div>
-
-            <div class="logo hidden">
-                <a href="https://github.com/chuang47" target="_blank" class="socials"><img src="github.png" class="socials"></a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+            </nav>
+            <div class="socials">
+                <a href="mailto:chuang47@terpmail.umd.edu"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/chuang47" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/chrishuang47" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/chris.huang47" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
+        </aside>
 
-            <div class="logo hidden">
-                <a href="https://www.instagram.com/chris.huang47/" target="_blank" class="socials"><img src="instagram.png" class="socials"></a>
-            </div>
+        <!-- Scrollable Right Panel -->
+        <main class="content">
+            <div class="content-inner">
+                <section id="about">
+                    <br><br><br>
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! I'm Chris Huang, a Sophomore at the University of Maryland studying CS(Data Science), Statistics, and Business.
+                    </p>
+                    <br>
+                    <p>
+                        In my free time, I enjoy tennis, football, basketball, and music.
+                    </p>
+                </section>
 
-            <div class="logo hidden">
-                <a href="mailto:chuang47@terpmail.umd.edu"><img src="mail.png" class="socials"></a>
+                <section id="experience">
+                    <h2>Experience</h2>
+
+                    <div class="experience-item">
+                        <div class="date-range">Nov 2024 — Present</div>
+                        <div class="experience-details">
+                            <h3>Full-Stack Engineer Intern · Javelin</h3>
+                            <p>Built an intelligent search engine and analytics dashboard for NIL sponsorships.</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>AWS</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="date-range">Feb 2025 — Present</div>
+                        <div class="experience-details">
+                            <h3>Undergraduate Research Assistant · University of Maryland</h3>
+                            <p>Conducting sustainability research on EV infrastructure using campus sensor data.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Jupyter</span>
+                                <span>Data Cleaning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="date-range">Jan 2025 — Present</div>
+                        <div class="experience-details">
+                            <h3>Undergraduate Research Assistant · University of Maryland</h3>
+                            <p>Working on the NEMO Stellar Dynamics Toolbox to improve simulations of galaxy dynamics.
+                            </p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Astrophysics</span>
+                                <span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="date-range">Oct 2024 — Dec 2024</div>
+                        <div class="experience-details">
+                            <h3>Full-Stack Engineer Intern · Todd Agriscience</h3>
+                            <p>Developed a full-stack dashboard for farmers to track and analyze plots.</p>
+                            <div class="tech-stack">
+                                <span>RESTful API's</span>
+                                <span>React</span>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="date-range">Aug 2024 — Dec 2024</div>
+                        <div class="experience-details">
+                            <h3>Undergraduate Research Assistant · University of Maryland</h3>
+                            <p>Mapped local food networks and gardens to visualize access disparities and build
+                                awareness.</p>
+                            <div class="tech-stack">
+                                <span>QGIS</span>
+                                <span>Python</span>
+                                <span>Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="date-range">Sep 2024 — Oct 2024</div>
+                        <div class="experience-details">
+                            <h3>Frontend Engineer Intern · Stealth Startup</h3>
+                            <p>Developing production-ready UI components for a machine learning platform analyzing
+                                athlete performance.</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>Figma</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="date-range">May 2024 — Aug 2024</div>
+                        <div class="experience-details">
+                            <h3>ORISE Research Fellow · FDA</h3>
+                            <p>Designed a clinical data visualization tool that improved regulatory review speed by 55%.
+                            </p>
+                            <div class="tech-stack">
+                                <span>R</span>
+                                <span>Python</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <h2>Projects</h2>
+
+                    <div class="experience-item">
+                        <div class="date-range">2022</div>
+                        <div class="experience-details">
+                            <h3>Clock-In App</h3>
+                            <p>Built a shift tracking system for boba cafe staff to log hours and monitor schedules.</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="date-range">2021</div>
+                        <div class="experience-details">
+                            <h3>Sneaker Profitability Predictor</h3>
+                            <p>Created a machine learning model to estimate sneaker resale values using market data.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br><br><br>
             </div>
-        </div>
-        
-        <footer class="hidden">
-            <p>&copy; 2024 Chris Huang</p>
-        </footer>
-        
-    </section>
+        </main>
+
+    </div>
 
 </body>
+
 </html>
