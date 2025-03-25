@@ -185,7 +185,44 @@
         </main>
 
     </div>
-
+    <script>
+        const spotlight = document.createElement('div');
+        spotlight.style.position = 'fixed';
+        spotlight.style.top = '0';
+        spotlight.style.left = '0';
+        spotlight.style.width = '100vw';
+        spotlight.style.height = '100vh';
+        spotlight.style.pointerEvents = 'none';
+        spotlight.style.zIndex = '1';
+        spotlight.style.background = 'radial-gradient(circle at center, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 150px)';
+        document.body.appendChild(spotlight);
+      
+        document.addEventListener('mousemove', (e) => {
+          spotlight.style.background = `
+            radial-gradient(
+              circle at ${e.clientX}px ${e.clientY}px,
+              rgba(255, 255, 255, 0.07) 0%,
+              rgba(255, 255, 255, 0) 150px
+            )
+          `;
+        });
+      
+        document.addEventListener('mouseleave', () => {
+          spotlight.style.background = 'none';
+        });
+      
+        document.addEventListener('mouseenter', () => {
+          spotlight.style.background = `
+            radial-gradient(
+              circle at center,
+              rgba(255, 255, 255, 0.07) 0%,
+              rgba(255, 255, 255, 0) 150px
+            )
+          `;
+        });
+      </script>
+      
+      
 </body>
 
 </html>
